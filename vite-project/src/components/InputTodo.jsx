@@ -5,8 +5,11 @@ import { Button } from "@mui/material";
 const InputTodo = () => {
   const [description, setDescription] = useState("");
   const handleSubmit = async (e) => {
+    console.log(description)
     e.preventDefault();
     try {
+      console.log('xxxxxxxxxxxx')
+      console.log(description)
       const body = { description };
       console.log(body)
  
@@ -23,7 +26,7 @@ const InputTodo = () => {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="flex gap-3 ">
         <TextField
           margin="normal"
           required

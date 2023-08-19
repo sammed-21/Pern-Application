@@ -18,7 +18,7 @@ function App() {
     <>
       <InputTodo/>
      <ListTodo/>
-         hi
+ 
     </>
   )
 }
